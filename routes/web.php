@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+Route::view('/', 'welcome');
+Route::view('/agregarInventario', 'agregarInventario');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +17,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
